@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+.chatbox {
+  background-color: skyblue;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 10px solid black;
+}
+.from {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: deeppink;
+}
+.msg{
+    color: white;
+}
+.rcv{
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
