@@ -1,25 +1,30 @@
 h1{
-    text-align: center;
+  font-size: 60px;
+  text-align: center;
+  
 }
-.chatbox {
-  background-color: skyblue;
+.chatbox{
+  background: linear-gradient(rgba(0, 0, 255, 0.382), rgba(0, 128, 0, 0.475), rgba(255, 0, 0, 0.492), rgba(128, 128, 128, 0.437), rgb(101, 187, 85));
   display: inline-block;
   margin: 20px;
   padding: 20px;
-  border-radius: 16px;
-  border: 10px solid black;
+  border-radius: 20px;
 }
-.from {
-  font-size: 20px;
-  font-weight: 700;
-  font-style: italic;
-  color: deeppink;
+.from{
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
 }
 .msg{
-    color: white;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.647);
+  font-weight: 500;
+  font-style: italic;
 }
 .rcv{
-    font-size: 20px;
-    color: red;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
 }
