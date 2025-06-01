@@ -26,6 +26,31 @@ app.get("/chat", async (req, res) => {
   res.render("index.ejs", { chats });
 });
 
+//  new route
+
+app.get("/chat/new", (req, res) => {
+  res.render("new.ejs");
+});
+
+// create route
+
+app.post("/chat", (req, res) => {
+  let { from, msg, to } = req.body;
+  let newChat = new Chat({
+    from: from,
+    to: to,
+    msg: msg,
+    created_at: new Date(),
+  });
+
+  newChat
+    .save()
+    .then(() => console.log("create successfull"))
+    .catch((err) => console.log(err));
+
+  res.redirect("/chat");
+});
+
 app.get("/", (req, res) => {
   res.send("This is home page");
 });

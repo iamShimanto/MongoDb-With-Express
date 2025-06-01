@@ -28,3 +28,12 @@ h1{
   color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
+
+button{
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
